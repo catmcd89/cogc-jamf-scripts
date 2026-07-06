@@ -17,7 +17,7 @@
 
 
 # --- Jamf Pro variables ---
-JAMF_URL="JAMF URL"
+JAMF_URL="JAMFINSTANCE.jamfcloud.com"
 CLIENT_ID="API ID"
 CLIENT_SECRET=$(security find-generic-password -a "API ID" -s "NAME" -w)
 
@@ -25,7 +25,7 @@ CLIENT_SECRET=$(security find-generic-password -a "API ID" -s "NAME" -w)
 LOG_FILE="/var/log/jamf_wipe.log"
 DIALOG="/usr/local/bin/dialog"
 JAMF="/usr/local/jamf/bin/jamf"
-ERASE_PIN="XXXXXX" #for intel Macs
+ERASE_PIN="<pin>" #for intel Macs
 
 # --- Get Smart Groups ---
 #where the CSV of the groups and details are kept. You can ask the Jamf AI to export this for you
